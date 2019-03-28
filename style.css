@@ -204,16 +204,22 @@ ul#registration-steps-pro li.current-menu-item .registration-step-circle-icon {
 ul.page-numbers li span.page-numbers.current,
 a.not-a-member-pro:hover,
 .sf-menu a:before,
-body .short-border-bottom:after,
 .btn-green-pro,
 .btn:hover,
 .flex-control-paging li a.flex-active,
 .btn-header-pro:hover,
 #pro-scroll-top:hover {
 	color:#ffffff;
-	border-color:#3db13d;
-	background:#3db13d;	
+	border-color:#f5af19;
+	background:#f5af19;	
 }
+
+body .short-border-bottom:after{
+	border-color: #E72A34;
+	background: #E72A34;
+}
+
+
 
 /* Dark Grey Button Color */
 ul#friends-activity-profiles li.friends-activity-profiles-more a:hover,
