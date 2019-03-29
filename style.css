@@ -168,7 +168,7 @@ a:hover {
 	text-decoration:none;
 }
 
-ul.dashboard-genres-pro li.active,
+
 #search-mobile-nav-pro input:focus,
 select.custom-select:focus,
 ul.registration-invite-friends-list li.active,
@@ -179,6 +179,9 @@ ul.registration-invite-friends-list li:hover,
 .jumbotron-pro.jumbotron-selected, .registration-billing-form .jumbotron-pro:hover,
 ul#registration-steps-pro li:hover, ul#registration-steps-pro li.current-menu-item {
 	border-color:#3db13d;
+}
+ul.dashboard-genres-pro li.active{
+	border-color: #000;
 }
 
 ul#registration-steps-pro li.current-menu-item .registration-step-circle-icon:before {
@@ -207,18 +210,20 @@ a.not-a-member-pro:hover,
 .btn-green-pro,
 .btn:hover,
 .flex-control-paging li a.flex-active,
-.btn-header-pro:hover,
 #pro-scroll-top:hover {
 	color:#ffffff;
-	border-color:#f5af19;
-	background:#f5af19;	
+	border-color:#000;
+	background:#000;	
 }
 
-body .short-border-bottom:after{
-	border-color: #E72A34;
-	background: #E72A34;
+.btn-header-pro:hover{
+	color: #fff;
+	background-color: #000;
 }
-
+body .short-border-bottom:after {
+    border-color: #E72A34;
+    background: #E72A34;
+}
 
 
 /* Dark Grey Button Color */
@@ -4677,5 +4682,48 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 		display:none;
 	}
 }
-
-
+.slick-prev{
+	left:10px;
+	z-index:1;
+}
+.slick-next{
+	right:10px;
+	z-index:1;
+}
+.slick-prev:before{
+	color: darkgray;
+}
+.slick-next:before{
+	color: darkgray;
+}
+.grid-border{
+	border: 1px solid;
+	border-color: lightgray;
+}
+.item-listing-text-skrn-vertical-align{
+	text-align: center;
+	padding-left: 30px;
+}
+a:active{
+	display: contents;
+}
+.display-none{
+	display: none;
+}
+.margin-top{
+	margin-top:10px;
+}
+@media screen and (max-width: 767px) {
+	.padding-left-xs {
+		padding-left: 30px !important;
+	}
+	.margin-bottom-xs {
+		margin-bottom: 14px;
+	}
+	.height-xs{
+		height: 0px
+	}
+	.padding-bottom-xs{
+		padding-bottom: 14px;
+	}
+}
