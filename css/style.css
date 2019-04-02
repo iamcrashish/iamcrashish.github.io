@@ -95,53 +95,60 @@ a:focus {
 .formob {
   display: none; }
 
-.tooltip .tooltip-inner {
-  max-width: 300px;
-  padding: 20px;
-  color: #fff;
-  text-align: left;
-  background-color: #323232;
-  border-radius: 6px;
-  opacity: 1; }
+.popover {
+  border: 0px;
+  background: none !important; }
+  .popover .popover-body {
+    max-width: 300px;
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+    background-color: #323232;
+    border-radius: 6px;
+    opacity: 1; }
+  .popover h3 {
+    font-family: 'Mont-R';
+    font-size: 20px; }
+  .popover p {
+    font-family: 'Mont-R';
+    font-size: 15px;
+    margin-bottom: 25px; }
+  .popover i {
+    background: #C4312A;
+    height: 2px;
+    width: 50px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 2px; }
+  .popover a {
+    font-family: 'Mont-R';
+    background: #980E08;
+    padding: 13px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer; }
+  .popover a:hover {
+    background: #800c07;
+    transition: 0.5s; }
 
-.tooltip h3 {
-  font-family: 'Mont-R';
-  font-size: 20px; }
+.carousel-control-next, .carousel-control-prev {
+  width: 7%; }
 
-.tooltip p {
-  font-family: 'Mont-R';
-  font-size: 15px;
-  margin-bottom: 25px; }
-
-.tooltip i {
-  background: #C4312A;
-  height: 2px;
-  width: 50px;
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-left: 2px; }
-
-.tooltip a {
-  font-family: 'Mont-R';
-  background: #980E08;
-  padding: 13px;
-  width: 100%;
-  text-align: center;
-  display: block;
-  border-radius: 6px;
-  font-size: 15px;
-  transition: 0.5s;
-  cursor: pointer; }
-
-.tooltip a:hover {
-  background: #800c07;
-  transition: 0.5s; }
-
-.tooltip.show {
-  opacity: 1; }
-
-.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before {
+.bs-popover-auto[x-placement^=right] > .arrow::after, .bs-popover-right > .arrow::after {
   border-right-color: #323232; }
+
+.bs-popover-auto[x-placement^=left] > .arrow::after, .bs-popover-left > .arrow::after {
+  border-left-color: #323232; }
+
+.bs-popover-auto[x-placement^=top] > .arrow::after, .bs-popover-left > .arrow::after {
+  border-left-color: #323232; }
+
+.bs-popover-auto[x-placement^=bottom] > .arrow::after, .bs-popover-left > .arrow::after {
+  border-left-color: #323232; }
 
 .modal-content {
   background-color: #323232;
@@ -174,7 +181,7 @@ a:focus {
       color: #fff;
       padding: 13px 50px;
       display: inline-block;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       border-radius: 6px;
       margin-top: 30px; }
     .modal-content .modal-body .maincon a:hover {
@@ -188,6 +195,11 @@ a:focus {
   opacity: 1; }
   .close img {
     width: 13px; }
+
+@media only screen and (max-width: 991px) {
+  .modal-dialog {
+    margin: 0;
+    max-width: 100%; } }
 
 @media only screen and (max-width: 768px) {
   .headbar {
@@ -234,4 +246,12 @@ a:focus {
   .carousel-caption h5 {
     font-size: 8vw; }
   .carousel-caption a {
-    font-size: 5vw; } }
+    font-size: 5vw; }
+  .modal-dialog {
+    margin: 0; }
+  .modalbottom {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #323232;
+    left: 0; } }

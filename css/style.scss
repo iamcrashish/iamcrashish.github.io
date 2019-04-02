@@ -130,8 +130,11 @@ a:focus {
 	display: none;
 }
 
-.tooltip {
-	.tooltip-inner {
+.popover {
+	border: 0px;
+	background: none !important;
+	
+	.popover-body {
     	max-width: 300px;
 		padding: 20px;
 		color: #fff;
@@ -180,12 +183,24 @@ a:focus {
 	}
 }
 
-.tooltip.show {
-    opacity: 1;
+.carousel-control-next, .carousel-control-prev {
+    width: 7%;
 }
 
-.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before {
+.bs-popover-auto[x-placement^=right]>.arrow::after, .bs-popover-right>.arrow::after {
     border-right-color: #323232;
+}
+
+.bs-popover-auto[x-placement^=left]>.arrow::after, .bs-popover-left>.arrow::after {
+    border-left-color: #323232;
+}
+
+.bs-popover-auto[x-placement^=top]>.arrow::after, .bs-popover-left>.arrow::after {
+    border-left-color: #323232;
+}
+
+.bs-popover-auto[x-placement^=bottom]>.arrow::after, .bs-popover-left>.arrow::after {
+    border-left-color: #323232;
 }
 
 .modal-content {
@@ -232,7 +247,7 @@ a:focus {
 				color: #fff;
 				padding: 13px 50px;
 				display: inline-block;
-				margin-bottom: 50px;
+				margin-bottom: 30px;
 				border-radius: 6px;
 				margin-top: 30px;
 		    }
@@ -257,6 +272,14 @@ a:focus {
 	}
 }
 
+
+@media only screen and (max-width: 991px) {
+	.modal-dialog {
+	    margin: 0;
+	    max-width: 100%;
+    }
+	
+}
 
 @media only screen and (max-width: 768px) {
 	.headbar {
@@ -333,4 +356,16 @@ a:focus {
     .carousel-caption a {
     	font-size: 5vw;
     }
+    
+    .modal-dialog {
+	    margin: 0;
+    }
+    
+    .modalbottom {
+		position: fixed;
+		bottom: 0px;
+		width: 100%;
+		background: #323232;
+		left: 0;
+	}
 }
