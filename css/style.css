@@ -1,0 +1,237 @@
+@font-face {
+  font-family: Mont-B;
+  src: url("fonts/Montserrat-Bold.otf"); }
+
+@font-face {
+  font-family: Mont-M;
+  src: url("fonts/Montserrat-Medium.otf"); }
+
+@font-face {
+  font-family: Mont-R;
+  src: url("fonts/Montserrat-Regular.otf"); }
+
+body {
+  font-family: 'Mont-R'; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+a:focus {
+  outline: 0; }
+
+.headbar {
+  background: #C4312A;
+  padding: 20px; }
+  .headbar .navlinks a {
+    padding: 12px 30px;
+    border-radius: 6px;
+    margin: 0px 10px;
+    transition: 0.5s; }
+  .headbar .navlinks .signin {
+    background: #323232;
+    color: #fff; }
+  .headbar .navlinks .signin:hover {
+    background: black;
+    transition: 0.5s; }
+  .headbar .navlinks .howitworks {
+    background: #980E08;
+    color: #fff; }
+  .headbar .navlinks .howitworks:hover {
+    background: #800c07;
+    transition: 0.5s; }
+
+.screens {
+  height: 35vw;
+  background-position: right;
+  background-size: cover; }
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50% !important;
+  background-color: #fff;
+  opacity: 1; }
+
+.carousel-indicators .active {
+  background-color: #C4312A;
+  opacity: 1; }
+
+.carousel-caption {
+  bottom: auto;
+  right: auto;
+  color: #fff;
+  text-align: left;
+  top: 50% !important;
+  left: 30% !important;
+  transform: translate(-30%, -50%); }
+  .carousel-caption h5 {
+    font-size: 40px;
+    font-family: 'Mont-B';
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px #333; }
+  .carousel-caption a {
+    background: #980E08;
+    padding: 12px 30px;
+    font-size: 20px;
+    font-family: 'Mont-M';
+    border-radius: 6px;
+    color: #fff;
+    transition: 0.5s; }
+  .carousel-caption a:hover {
+    background: #800c07;
+    transition: 0.5s; }
+
+.categories {
+  padding: 30px; }
+  .categories h2 {
+    color: #C4312A;
+    font-family: 'Mont-B';
+    font-size: 26px;
+    margin-bottom: 20px; }
+
+.formob {
+  display: none; }
+
+.tooltip .tooltip-inner {
+  max-width: 300px;
+  padding: 20px;
+  color: #fff;
+  text-align: left;
+  background-color: #323232;
+  border-radius: 6px;
+  opacity: 1; }
+
+.tooltip h3 {
+  font-family: 'Mont-R';
+  font-size: 20px; }
+
+.tooltip p {
+  font-family: 'Mont-R';
+  font-size: 15px;
+  margin-bottom: 25px; }
+
+.tooltip i {
+  background: #C4312A;
+  height: 2px;
+  width: 50px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 2px; }
+
+.tooltip a {
+  font-family: 'Mont-R';
+  background: #980E08;
+  padding: 13px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.5s;
+  cursor: pointer; }
+
+.tooltip a:hover {
+  background: #800c07;
+  transition: 0.5s; }
+
+.tooltip.show {
+  opacity: 1; }
+
+.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before {
+  border-right-color: #323232; }
+
+.modal-content {
+  background-color: #323232;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center; }
+  .modal-content .modal-body h4 {
+    font-family: 'Mont-B'; }
+  .modal-content .modal-body i {
+    background: #C4312A;
+    height: 3px;
+    width: 80px;
+    display: inline-block;
+    margin-top: 10px; }
+  .modal-content .modal-body .maincon {
+    margin-top: 80px; }
+    .modal-content .modal-body .maincon img {
+      width: 120px; }
+    .modal-content .modal-body .maincon h6 {
+      font-family: 'Mont-M';
+      font-size: 22px;
+      margin-top: 30px; }
+    .modal-content .modal-body .maincon p {
+      font-size: 13px;
+      padding: 0px 50px; }
+    .modal-content .modal-body .maincon a {
+      font-family: 'Mont-M';
+      font-size: 18px;
+      background: #980E08;
+      color: #fff;
+      padding: 13px 50px;
+      display: inline-block;
+      margin-bottom: 50px;
+      border-radius: 6px;
+      margin-top: 30px; }
+    .modal-content .modal-body .maincon a:hover {
+      background: #800c07;
+      transition: 0.5s; }
+
+.modal-header {
+  border-bottom: none; }
+
+.close {
+  opacity: 1; }
+  .close img {
+    width: 13px; }
+
+@media only screen and (max-width: 768px) {
+  .headbar {
+    padding: 10px; }
+    .headbar .brand-logo img {
+      width: 50px; }
+    .headbar .navlinks a {
+      padding: 7px 15px;
+      border-radius: 6px;
+      margin: 0px;
+      transition: 0.5s;
+      font-size: 12px; }
+  .screens {
+    height: 100vw;
+    background-position: 93% 50%;
+    background-size: cover; }
+  .categories {
+    display: none !important; }
+  .formob {
+    display: block !important;
+    text-align: center; }
+    .formob h2 {
+      font-family: 'Mont-B';
+      font-size: 8vw;
+      display: block;
+      padding: 20px;
+      margin-top: 20px; }
+    .formob .col-6 {
+      margin-bottom: 20px; }
+    .formob img {
+      width: 100%; }
+    .formob h5 {
+      margin-top: 10px;
+      font-size: 18px; }
+  .carousel-caption {
+    bottom: auto;
+    right: auto;
+    color: #fff;
+    text-align: center;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    width: 90%; }
+  .carousel-caption h5 {
+    font-size: 8vw; }
+  .carousel-caption a {
+    font-size: 5vw; } }
