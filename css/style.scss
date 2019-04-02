@@ -13,8 +13,10 @@
 	src: url('fonts/Montserrat-Regular.otf');
 }
 
-body {
+html, body {
 	font-family: 'Mont-R';
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 a {
@@ -28,6 +30,7 @@ a:hover {
 a:focus {
 	outline: 0;
 }
+
 
 .headbar {
 	background: #C4312A;
@@ -195,12 +198,12 @@ a:focus {
     border-left-color: #323232;
 }
 
-.bs-popover-auto[x-placement^=top]>.arrow::after, .bs-popover-left>.arrow::after {
-    border-left-color: #323232;
+.bs-popover-auto[x-placement^=top]>.arrow::after, .bs-popover-top>.arrow::after {
+    border-top-color: #323232;
 }
 
-.bs-popover-auto[x-placement^=bottom]>.arrow::after, .bs-popover-left>.arrow::after {
-    border-left-color: #323232;
+.bs-popover-auto[x-placement^=bottom]>.arrow::after, .bs-popover-bottom>.arrow::after {
+    border-bottom-color: #323232;
 }
 
 .modal-content {
@@ -318,6 +321,7 @@ a:focus {
 		
 		h2 {
 			font-family: 'Mont-B';
+			color: #C4312A;
 			font-size: 8vw;
 			display: block;
 			padding: 20px;

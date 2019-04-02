@@ -10,8 +10,10 @@
   font-family: Mont-R;
   src: url("fonts/Montserrat-Regular.otf"); }
 
-body {
-  font-family: 'Mont-R'; }
+html, body {
+  font-family: 'Mont-R';
+  max-width: 100%;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
@@ -24,7 +26,7 @@ a:focus {
 
 .headbar {
   background: #C4312A;
-  padding: 20px; }
+  padding: 10px; }
   .headbar .navlinks a {
     padding: 12px 30px;
     border-radius: 6px;
@@ -144,11 +146,11 @@ a:focus {
 .bs-popover-auto[x-placement^=left] > .arrow::after, .bs-popover-left > .arrow::after {
   border-left-color: #323232; }
 
-.bs-popover-auto[x-placement^=top] > .arrow::after, .bs-popover-left > .arrow::after {
-  border-left-color: #323232; }
+.bs-popover-auto[x-placement^=top] > .arrow::after, .bs-popover-top > .arrow::after {
+  border-top-color: #323232; }
 
-.bs-popover-auto[x-placement^=bottom] > .arrow::after, .bs-popover-left > .arrow::after {
-  border-left-color: #323232; }
+.bs-popover-auto[x-placement^=bottom] > .arrow::after, .bs-popover-bottom > .arrow::after {
+  border-bottom-color: #323232; }
 
 .modal-content {
   background-color: #323232;
@@ -183,7 +185,7 @@ a:focus {
       display: inline-block;
       margin-bottom: 30px;
       border-radius: 6px;
-      margin-top: 30px; }
+      margin-top: 0px; }
     .modal-content .modal-body .maincon a:hover {
       background: #800c07;
       transition: 0.5s; }
@@ -223,6 +225,7 @@ a:focus {
     text-align: center; }
     .formob h2 {
       font-family: 'Mont-B';
+      color: #C4312A;
       font-size: 8vw;
       display: block;
       padding: 20px;
@@ -255,3 +258,8 @@ a:focus {
     width: 100%;
     background: #323232;
     left: 0; } }
+
+
+    ul .li a{
+      color: white;
+    }
