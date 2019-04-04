@@ -95,8 +95,12 @@ a:focus {
     margin-bottom: 20px; }
 
 .formob {
-  display: none; }
+  display: none;
+}
 
+.formob .color-black{
+color: #000;
+}
 .popover {
   border: 0px;
   background: none !important; }
@@ -262,4 +266,8 @@ a:focus {
 
     ul .li a{
       color: white;
+    }
+
+    a.color-white, a.color-white:visited, a.color-white:hover, a.color-white:focus, a.color-white:active{
+      color: #FFF;
     }
