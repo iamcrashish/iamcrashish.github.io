@@ -25,24 +25,31 @@ a:focus {
   outline: 0; }
 
 .headbar {
-  background: #C4312A;
+  background: #723B90;
   padding: 10px; }
+
+.headbar .brand-logo img{
+  height: 60px;
+  width: auto;
+  margin-left: 10px
+}
+
   .headbar .navlinks a {
     padding: 12px 30px;
     border-radius: 6px;
     margin: 0px 10px;
     transition: 0.5s; }
   .headbar .navlinks .signin {
-    background: #323232;
-    color: #fff; }
+    background: #F4C70C;
+    color: #723b90; }
   .headbar .navlinks .signin:hover {
-    background: black;
+    background: #F4C70C;
     transition: 0.5s; }
   .headbar .navlinks .howitworks {
-    background: #980E08;
+    background: #54226F;
     color: #fff; }
   .headbar .navlinks .howitworks:hover {
-    background: #800c07;
+    background: #5B2479;
     transition: 0.5s; }
 
 .screens {
@@ -58,24 +65,26 @@ a:focus {
   opacity: 1; }
 
 .carousel-indicators .active {
-  background-color: #C4312A;
+  background-color: #723B90;
   opacity: 1; }
 
 .carousel-caption {
   bottom: auto;
   right: auto;
-  color: #fff;
+  color: #FFF;
   text-align: left;
   top: 50% !important;
   left: 30% !important;
   transform: translate(-30%, -50%); }
+
   .carousel-caption h5 {
     font-size: 40px;
     font-family: 'Mont-B';
     margin-bottom: 40px;
-    text-shadow: 1px 1px 2px #333; }
+    /* text-shadow: 1px 1px 2px #333; */
+  }
   .carousel-caption a {
-    background: #980E08;
+    background: #723B90;
     padding: 12px 30px;
     font-size: 20px;
     font-family: 'Mont-M';
@@ -83,13 +92,13 @@ a:focus {
     color: #fff;
     transition: 0.5s; }
   .carousel-caption a:hover {
-    background: #800c07;
+    background: #5B2479;
     transition: 0.5s; }
 
 .categories {
   padding: 30px; }
   .categories h2 {
-    color: #C4312A;
+    color: #723B90;
     font-family: 'Mont-B';
     font-size: 26px;
     margin-bottom: 20px; }
@@ -98,9 +107,16 @@ a:focus {
   display: none;
 }
 
+<<<<<<< Updated upstream
 .formob .color-black{
 color: #000;
 }
+=======
+  .formob .color-black{
+    color: #000;
+    }
+    
+>>>>>>> Stashed changes
 .popover {
   border: 0px;
   background: none !important; }
@@ -120,7 +136,7 @@ color: #000;
     font-size: 15px;
     margin-bottom: 25px; }
   .popover i {
-    background: #C4312A;
+    background: #723B90;
     height: 2px;
     width: 50px;
     display: inline-block;
@@ -128,7 +144,7 @@ color: #000;
     margin-left: 2px; }
   .popover a {
     font-family: 'Mont-R';
-    background: #980E08;
+    background: #723B90;
     padding: 13px;
     width: 100%;
     text-align: center;
@@ -138,7 +154,7 @@ color: #000;
     transition: 0.5s;
     cursor: pointer; }
   .popover a:hover {
-    background: #800c07;
+    background: #5B2479;
     transition: 0.5s; }
 
 .carousel-control-next, .carousel-control-prev {
@@ -157,14 +173,14 @@ color: #000;
   border-bottom-color: #323232; }
 
 .modal-content {
-  background-color: #323232;
+  background-color: #723B90;
   border-radius: 6px;
   color: #fff;
   text-align: center; }
   .modal-content .modal-body h4 {
     font-family: 'Mont-B'; }
   .modal-content .modal-body i {
-    background: #C4312A;
+    background: #F4C70C;
     height: 3px;
     width: 80px;
     display: inline-block;
@@ -176,22 +192,22 @@ color: #000;
     .modal-content .modal-body .maincon h6 {
       font-family: 'Mont-M';
       font-size: 22px;
-      margin-top: 30px; }
+      margin-top: 20px; }
     .modal-content .modal-body .maincon p {
       font-size: 13px;
       padding: 0px 50px; }
     .modal-content .modal-body .maincon a {
       font-family: 'Mont-M';
       font-size: 18px;
-      background: #980E08;
-      color: #fff;
+      background: #F4C70C;
+      color: #723b90;
       padding: 13px 50px;
       display: inline-block;
       margin-bottom: 30px;
       border-radius: 6px;
       margin-top: 0px; }
     .modal-content .modal-body .maincon a:hover {
-      background: #800c07;
+      background: #FFCE00;
       transition: 0.5s; }
 
 .modal-header {
@@ -211,7 +227,9 @@ color: #000;
   .headbar {
     padding: 10px; }
     .headbar .brand-logo img {
-      width: 50px; }
+      width: auto;
+      height: 50px;
+    margin-left: 0px }
     .headbar .navlinks a {
       padding: 7px 15px;
       border-radius: 6px;
@@ -229,7 +247,7 @@ color: #000;
     text-align: center; }
     .formob h2 {
       font-family: 'Mont-B';
-      color: #C4312A;
+      color: #723B90;
       font-size: 8vw;
       display: block;
       padding: 20px;
@@ -260,7 +278,7 @@ color: #000;
     position: fixed;
     bottom: 0px;
     width: 100%;
-    background: #323232;
+    background: #723B90;
     left: 0; } }
 
 
